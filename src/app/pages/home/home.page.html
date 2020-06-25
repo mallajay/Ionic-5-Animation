@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button (click)="toggleAnimation()" expand="full">
+    Toggle
+  </ion-button>
+
+  <div #square class="square"></div>
+
+  <ion-button expand="block" routerLink="/list">Go to List Page</ion-button>
+
+  <ion-button expand="block" (click)="presentModal()">Open Modal</ion-button>
+</ion-content>
